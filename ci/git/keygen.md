@@ -9,7 +9,7 @@ authorized_keys2  id_dsa       known_hosts
 config            id_dsa.pub
 ```
 
-    关键是看有没有用\\`something\\`和\\`something.pub\\`来命名的一对文件，这个\\`something\\`通常就是\\`\*\*id\\_dsa\*\*\\`或\\`\*\*id\\_rsa\*\*\\`。有\\`.\*\*pub\*\*\\`后缀的文件就是公钥，另一个文件则是密钥。假如没有这些文件，或者干脆连\\`.\*\*ssh\*\*\\`目录都没有，可以用\\`\*\*ssh-keygen\*\*\\`来创建。
+关键是看有没有用\`something\`和\`something.pub\`来命名的一对文件，这个\`something\`通常就是\`id\_dsa\`或\`id\_rsa\`。有\`.pub\`后缀的文件就是公钥，另一个文件则是密钥。假如没有这些文件，或者干脆连\`.ssh\`目录都没有，可以用\`ssh-keygen\`来创建。
 
 ```
 $ ssh-keygen -t rsa -C "邮箱地址"
