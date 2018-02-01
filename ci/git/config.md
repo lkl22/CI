@@ -1,6 +1,8 @@
 # 配置全局环境变量
 
-文档：https://git-scm.com/docs/git-config
+文档：[https://git-scm.com/docs/git-config](https://git-scm.com/docs/git-config)
+
+git config --list // 查看配置
 
 
 
@@ -9,8 +11,6 @@ git config --global user.name "xxx"
 git config --global user.email "xxx@163.com"
 
 git config --global gui.encoding utf-8
-
-
 
 * Git可以在你提交时自动地把行结束符CRLF转换成LF，而在签出代码时把LF转换成CRLF。用`core.autocrlf`来打开此项功能， 如果是在Windows系统上，把它设置成`true`，这样当签出代码时，LF会被转换成CRLF：
 
@@ -22,15 +22,9 @@ Linux或Mac系统使用LF作为行结束符，因此你不想Git在签出文件�
 
 这样会在Windows系统上的签出文件中保留CRLF，会在Mac和Linux系统上，包括仓库中保留LF。
 
-
-
 * 在使用git的时候，经常会碰到有一些中文文件名或者路径被转义成\xx\xx\xx之类的，此时可以通过git的配置来改变默认转义具体命令如下：
 
       `$ git config --global core.quotepath false`
-
-
-
-
 
 
 
