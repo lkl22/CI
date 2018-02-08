@@ -4,9 +4,9 @@ _vim /etc/init.d/nginx_ 添加以下网址中的脚本
 
 [https://www.nginx.com/resources/wiki/start/topics/examples/redhatnginxinit/](https://www.nginx.com/resources/wiki/start/topics/examples/redhatnginxinit/)
 
-{% em type="red" %}_nginx=”/usr/sbin/nginx” 修改成nginx执行程序的路径。_{% endem %}
+_nginx=”/usr/sbin/nginx” 修改成nginx执行程序的路径。_
 
-{% em type="red" %}_NGINX\_CONF\_FILE=”/etc/nginx/nginx.conf” 修改成配置文件的路径_{% endem %}
+_NGINX\_CONF\_FILE=”/etc/nginx/nginx.conf” 修改成配置文件的路径_
 
   
 修改权限
@@ -33,7 +33,7 @@ vim nginx.conf
 ```
 /usr/local/nginx/sbin/nginx -s reload
 ```
-{% em type="red" %}nginx: [error] open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory){% endem %}
+nginx: [error] open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory)
 
 _使用nginx -c的参数指定nginx.conf文件的位置_
 
