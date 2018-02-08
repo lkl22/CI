@@ -9,4 +9,5 @@
     * [Config](ci/git/config.md)
   * [Mysql](ci/mysql.md)
     * [Install](ci/mysql/install.md)
+    * [Manage](ci/mysql/manage.md)
 
