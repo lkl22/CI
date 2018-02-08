@@ -1,6 +1,6 @@
 # Generated files
 _book/
-node_modules/
+#node_modules/
 
 # Intellij
 *.iml
