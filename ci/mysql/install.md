@@ -2,8 +2,6 @@
 
 yum -y install mysql-server
 
-
-
 * 启动MariaDB
 
 service mysqld start
@@ -20,31 +18,37 @@ chkconfig mysqld on
 
 chkconfig --list mysqld
 
-        mysqld 0:off 1:off 2:on 3:on 4:on 5:on 6:off
-
-
+```
+    mysqld 0:off 1:off 2:on 3:on 4:on 5:on 6:off
+```
 
 **Centos7：**
 
 yum install mariadb-server mariadb
 
-
-
 * 启动MariaDB
 
-systemctl start mariadb 
+systemctl start mariadb
 
 * 停止MariaDB
 
-systemctl stop mariadb 
+systemctl stop mariadb
 
 * 重启MariaDB
 
-systemctl restart mariadb 
+systemctl restart mariadb
 
 * 设置开机启动
 
-systemctl enable mariadb 
+systemctl enable mariadb
 
 
+
+**配置字符集**
+
+vim /etc/my.cnf
+
+\#默认字符集
+
+default-character-set=utf8
 
