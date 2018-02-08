@@ -22,6 +22,22 @@ nginx防火墙 80端口
 ```
 
 #### 配置nginx
+```
+cd /usr/local/nginx/conf/
+mkdir vhost
+vim nginx.conf
+    引用配置文件，加在nginx.conf文件后面
+    include vhost/*.conf;
+```
+### 重启
+`/usr/local/nginx/sbin/nginx -s reload`
+{% em type="red" %}nginx: [error] open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory){% endem %}
+_使用nginx -c的参数指定nginx.conf文件的位置_
+
+```
+/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+```
+
 
 
 
