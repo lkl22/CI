@@ -124,7 +124,3 @@ select * from TableName where ... order by FieldName;
 
 
 
-
-
-
-
