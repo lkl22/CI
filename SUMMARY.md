@@ -14,4 +14,5 @@
     * [Manage](ci/mysql/manage.md)
   * [Nginx](ci/nginx.md)
     * [Install](ci/nginx/install.md)
+    * [Config](ci/nginx/config.md)
 
