@@ -34,6 +34,7 @@ vim nginx.conf
 /usr/local/nginx/sbin/nginx -s reload
 ```
 {% em type="red" %}nginx: [error] open() "/usr/local/nginx/logs/nginx.pid" failed (2: No such file or directory){% endem %}
+
 _使用nginx -c的参数指定nginx.conf文件的位置_
 
 ```
