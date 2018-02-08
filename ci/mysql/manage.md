@@ -1,3 +1,5 @@
+#### **用户管理**
+
 * root用户登录
 
 ```
@@ -24,8 +26,6 @@ set password for root@localhost=password('root');
 set password for root@127.0.0.1=password('root');
 ```
 
-
-
 * 查看用户表
 
 ```
@@ -37,6 +37,28 @@ _\G代表格式化_
 ```
 select * from mysql.user\G;
 ```
+
+#### **权限管理**
+
+* 修改数据库权限
+
+```
+grant all privileges on databaseName.* to userName@'%' identified by 'userName' with grant option;
+```
+
+* 刷新权限，使修改生效
+
+```
+flush privileges;
+```
+
+* 查看授权
+
+```
+SHOW GRANTS FOR 'userName'@'localhost';
+```
+
+#### 数据库管理
 
 * 显示数据库
 
@@ -52,7 +74,7 @@ use databaseName
 
 * 创建数据库databaseName
 
-    create database `databaseName` default character set utf8 collate utf8_general_ci;
+  create database `databaseName` default character set utf8 collate utf8\_general\_ci;
 
 * 删除数据库
 
@@ -60,16 +82,18 @@ use databaseName
 drop database 'databaseName';
 ```
 
-* 修改数据库权限
+#### 表格管理
+
+* 显示数据库中的所有数据表
 
 ```
-grant all privileges on databaseName.* to userName@'%' identified by 'userName' with grant option;
+show tables;
 ```
 
-* 刷新权限
+* 应用数据库脚本，mmall.sql中都是操作表的sql语句
 
 ```
-flush privileges;
+source /developer/config/mmall.sql;
 ```
 
 
