@@ -74,7 +74,9 @@ use databaseName
 
 * 创建数据库databaseName
 
-  create database `databaseName` default character set utf8 collate utf8\_general\_ci;
+```
+create database databaseName default character set utf8 collate utf8_general_ci;
+```
 
 * 删除数据库
 
@@ -95,6 +97,34 @@ show tables;
 ```
 source /developer/config/mmall.sql;
 ```
+
+* 插入数据
+
+```
+insert into TableName(FieldName1,FieldName2,FieldName3...) values("value1","value2","value3"...);
+```
+
+* 更新数据
+
+```
+update TableName set FieldName=value where FieldName like '%xxx';
+```
+
+* 删除数据
+
+```
+delete from TableName where ...;
+```
+
+* 查询数据
+
+```
+select * from TableName where ... order by FieldName;
+```
+
+
+
+
 
 
 
