@@ -15,4 +15,6 @@
   * [Nginx](ci/nginx.md)
     * [Install](ci/nginx/install.md)
     * [Config](ci/nginx/config.md)
+  * [Gerrit](ci/gerrit.md)
+    * [Install](ci/gerrit/install.md)
 
