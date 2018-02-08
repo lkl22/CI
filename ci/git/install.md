@@ -1,20 +1,26 @@
-# 安装Git
-
-* **Download**
+#### **Download**
 
 [https://github.com/git/git/releases](https://github.com/git/git/releases)
 
-`wget`[`https://github.com/git/git/archive/v2.14.0.tar.gz`](https://github.com/git/git/archive/v2.14.0.tar.gz)
+* 下载
 
-`tar -zxvf git-v2.14.0.tar.gz`
+```
+wgethttps://github.com/git/git/archive/v2.14.0.tar.gz
+```
 
-* **Install**
+* 解压
 
-// 安装依赖包
+```
+tar -zxvf git-v2.14.0.tar.gz
+```
+
+#### **Install**
+
+* 安装依赖包
 
 yum -y install zlib-devel openssl-devel cpio expat-devel gettext-devel curl-devel perl-ExtUtils-CBuilder perl-ExtUtils-MakeMaker
 
-// 安装
+* 安装
 
 cd git-2.14.0/
 
@@ -22,7 +28,11 @@ make prefix=/usr/local all
 
 make prefix=/usr/local install
 
-// check
+#### check
 
+```
 git --version
+```
+
+
 

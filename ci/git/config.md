@@ -1,4 +1,4 @@
-# 配置全局环境变量
+#### 配置全局环境变量
 
 文档：[https://git-scm.com/docs/git-config](https://git-scm.com/docs/git-config)
 
@@ -23,6 +23,14 @@ $ git config --global core.autocrlf input
 * 在使用git的时候，经常会碰到有一些中文文件名或者路径被转义成\xx\xx\xx之类的，此时可以通过git的配置来改变默认转义具体命令如下：
 
   \`$ git config --global core.quotepath false\`
+
+#### 配置提交分支
+
+当执行push命令时，将会推送到refs/for/当前head所在的分支上，不会直接推送到gerrit的合并分支上，需要人工合代码
+
+```
+git config remote.origin.push refs/heads/*:refs/for/*
+```
 
 
 
