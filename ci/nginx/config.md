@@ -4,9 +4,9 @@ _vim /etc/init.d/nginx_ 添加以下网址中的脚本
 
 [https://www.nginx.com/resources/wiki/start/topics/examples/redhatnginxinit/](https://www.nginx.com/resources/wiki/start/topics/examples/redhatnginxinit/)
 
-{% em type="red" %}nginx=”/usr/sbin/nginx” 修改成nginx执行程序的路径。{% endem %}
+{% em type="red" %}_nginx=”/usr/sbin/nginx” 修改成nginx执行程序的路径。_{% endem %}
 
-{% em type="red" %}NGINX\_CONF\_FILE=”/etc/nginx/nginx.conf” 修改成配置文件的路径{% endem %}
+{% em type="red" %}_NGINX\_CONF\_FILE=”/etc/nginx/nginx.conf” 修改成配置文件的路径_{% endem %}
 
   
 修改权限
