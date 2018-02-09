@@ -47,5 +47,11 @@ Alias /gitweb "/var/www/git"
 </Directory>
 ```
 
+开机自动启动apache代理
+
+```
+systemctl enable httpd
+```
+
 
 

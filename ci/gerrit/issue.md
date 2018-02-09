@@ -18,5 +18,19 @@ chmod 755 /home/gerrit/
 chmod 755 /home/gerrit/gerrit_site/htpasswd.conf
 ```
 
+#### Gerrit错误
+
+_vim /home/gerrit/gerrit\_site/logs/error\_log _查看错误日志
+
+* ./bin/gerrit.sh: line 175: cd: /var/gerrit: No such file or directory
+
+\*\* ERROR: Gerrit site /var/gerrit not found
+
+_vim /etc/default/gerritcodereview_
+
+```
+GERRIT_SITE=/home/gerrit/gerrit_site
+```
+
 
 
