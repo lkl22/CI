@@ -32,7 +32,7 @@ Adding password for user userName
 
 _vim /usr/local/nginx/conf/vhost/gerrit.conf_
 
-```
+```markdown
 server {
     listen *:8088; //监听的端口
     server_name gerrit.wenbin.com;
@@ -69,7 +69,7 @@ server {
 
 _vim /etc/firewalld/zones/public.xml_
 
-```
+```css
 <?xml version="1.0" encoding="utf-8"?>
 <zone>
   <short>Public</short>

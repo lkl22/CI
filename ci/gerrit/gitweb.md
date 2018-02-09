@@ -15,6 +15,18 @@ _vim /etc/gitweb.conf_
 $projectroot = "/home/gerrit/gerrit_site/git";  #插入一行，指定gerrit里git仓库的所在位置
 ```
 
+#### Gerrit配置
+
+_vim /home/gerrit/gerrit\_site/etc/gerrit.config_
+
+在配置文件末尾加上下面的配置
+
+```markdown
+[gitweb]
+        type = gitweb
+        cgi = /var/www/git/gitweb.cgi
+```
+
 #### 代理设置
 
 * apache
