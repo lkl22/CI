@@ -65,3 +65,24 @@ server {
 
 重启nginx服务  _/usr/local/nginx/sbin/nginx -s reload_
 
+#### 防火墙配置
+
+_vim /etc/firewalld/zones/public.xml_
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<zone>
+  <short>Public</short>
+  <description>For use in public areas. You do not trust the other computers on networks to not harm your computer. Only selected incoming connections are accepted.</description>
+  <service name="dhcpv6-client"/>
+  <service name="ssh"/>
+  <service name="http"/>
+  <port protocol="tcp" port="80"/>
+  <port protocol="tcp" port="8088"/>
+  <port protocol="tcp" port="20"/>
+  <port protocol="tcp" port="29418"/>
+</zone>
+```
+
+放开29418和8088端口
+
