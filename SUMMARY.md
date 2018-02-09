@@ -18,5 +18,6 @@
   * [Gerrit](ci/gerrit.md)
     * [Install](ci/gerrit/install.md)
     * [Config](ci/gerrit/config.md)
+    * [Gitweb](ci/gerrit/gitweb.md)
     * [Issue](ci/gerrit/issue.md)
 

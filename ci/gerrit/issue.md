@@ -20,5 +20,3 @@ chmod 755 /home/gerrit/gerrit_site/htpasswd.conf
 
 
 
-
-
