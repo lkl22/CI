@@ -44,6 +44,7 @@ server {
 
     location / {
         proxy_pass  http://127.0.0.1:8081; //代理到本地的8081端口，对应于gerrit的监听端口
+                                           //注意后面不能加"/"，否则会出现“Code Review - Error The page you requested was not found....permission to view this page”的报错
         proxy_set_header X-Forwarded-For $remote_addr;
         proxy_set_header Host $host;
     }
@@ -62,5 +63,5 @@ server {
 }
 ```
 
-
+重启nginx服务  _/usr/local/nginx/sbin/nginx -s reload_
 
