@@ -155,7 +155,7 @@ _vim gerrit\_site/etc/gerrit.config_
 [gerrit]
         basePath = git
         serverId = 566ccad4-b987-4bc2-b407-1a78c64e3cc5
-        canonicalWebUrl = http://gerrit.wenbin.com
+        canonicalWebUrl = http://192.168.3.235:8081  //搭建gerrit所在主机的ip地址或者对应的域名
 [database]
         type = mysql
         hostname = localhost
