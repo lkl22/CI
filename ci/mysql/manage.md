@@ -43,7 +43,7 @@ select * from mysql.user\G;
 * 修改数据库权限
 
 ```
-grant all privileges on databaseName.* to userName@'%' identified by 'userName' with grant option;
+grant all privileges on databaseName.* to userName@'%' identified by 'password' with grant option;
 ```
 
 * 刷新权限，使修改生效
