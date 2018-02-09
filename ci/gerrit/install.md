@@ -19,6 +19,15 @@ cd /home/gerrit/
 su gerrit  //切换用户
 ```
 
+* 创建数据库
+
+```
+mysql -u gerrit -p  //使用gerrit用户登录
+create database gerritdb default character set utf8 collate utf8_general_ci;
+grant all privileges on gerritdb.* to gerrit@'localhost' identified by 'gerrit' with grant option;
+flush privileges;
+```
+
 * 指令安装
 
 在war包所在目录下，执行**java -jar gerrit\*.war init -d ~/gerrit\_site**，-d 后跟安装目录
@@ -139,6 +148,4 @@ Opening http://gerrit.wenbin.com/#/admin/projects/ ...OK
 ```
 
 vim gerrit\_site/etc/gerrit.config
-
-
 
