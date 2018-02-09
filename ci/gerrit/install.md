@@ -1,17 +1,17 @@
-* 默认安装
+#### 默认安装
 
 ```
 rpm -i https://gerritforge.com/gerritforge-repo-1-2.noarch.rpm
 yum install -y gerrit
 ```
 
-* war包安装
+#### war包安装
 
-_**Download**_
+* Download
 
 wget [https://gerrit-releases.storage.googleapis.com/gerrit-2.14.3.war](https://gerrit-releases.storage.googleapis.com/gerrit-2.15-rc2.war)
 
-_添加user_
+* 添加user
 
 ```
 useradd gerrit
@@ -19,7 +19,9 @@ cd /home/gerrit/
 su gerrit  //切换用户
 ```
 
-java -jar gerrit\*.war init -d ~/gerrit\_site
+* 指令安装
+
+在war包所在目录下，执行**java -jar gerrit\*.war init -d ~/gerrit\_site**，-d 后跟安装目录
 
 ```
 [gerrit@centos233 ~]$ java -jar gerrit*.war init -d ~/gerrit_site
@@ -135,6 +137,8 @@ Waiting for server on gerrit.wenbin.com:80 ... OK
 Opening http://gerrit.wenbin.com/#/admin/projects/ ...OK
 [gerrit@centos233 ~]$
 ```
+
+vim gerrit\_site/etc/gerrit.config
 
 
 
