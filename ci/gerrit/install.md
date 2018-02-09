@@ -102,7 +102,7 @@ Generating SSH host key ... rsa... dsa... ed25519... ecdsa 256... ecdsa 384... e
 Behind reverse proxy           [y/N]? y
 Proxy uses SSL (https://)      [y/N]? n
 Subdirectory on proxy server   [/]: 
-Listen on address              [*]: 
+Listen on address              [*]: 127.0.0.1
 Listen on port                 [8081]: 
 Canonical URL                  [http://*/]: http://gerrit.wenbin.com
 
