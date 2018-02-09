@@ -23,9 +23,9 @@ su gerrit  //切换用户
 
 ```
 mysql -u gerrit -p  //使用gerrit用户登录
-create database gerritdb default character set utf8 collate utf8_general_ci;
-grant all privileges on gerritdb.* to gerrit@'localhost' identified by 'gerrit' with grant option;
-flush privileges;
+create database gerritdb default character set utf8 collate utf8_general_ci; //创建数据库
+grant all privileges on gerritdb.* to gerrit@'localhost' identified by 'gerrit' with grant option; //修改权限
+flush privileges; //刷新权限，使权限修改生效
 ```
 
 * 指令安装
@@ -147,5 +147,42 @@ Opening http://gerrit.wenbin.com/#/admin/projects/ ...OK
 [gerrit@centos233 ~]$
 ```
 
-vim gerrit\_site/etc/gerrit.config
+* 查看配置文件
+
+_vim gerrit\_site/etc/gerrit.config_
+
+```
+[gerrit]
+        basePath = git
+        serverId = 566ccad4-b987-4bc2-b407-1a78c64e3cc5
+        canonicalWebUrl = http://gerrit.wenbin.com
+[database]
+        type = mysql
+        hostname = localhost
+        database = gerritdb
+        username = gerrit
+[index]
+        type = LUCENE
+[auth]
+        type = HTTP
+[receive]
+        enableSignedPush = false
+[sendemail]
+        smtpServer = smtp.163.com
+        smtpServerPort = 25
+        smtpUser = xxx@163.com
+        smtpPass = xxxx   
+        from = CodeReview<xxx@163.com>  
+[container]
+        user = gerrit
+        javaHome = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.102-4.b14.el7.x86_64/jre
+[sshd]
+        listenAddress = *:29418
+[httpd]
+        listenUrl = proxy-http://127.0.0.1:8081/
+[cache]
+        directory = cache
+```
+
+
 
