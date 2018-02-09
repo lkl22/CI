@@ -31,6 +31,25 @@ _vim /home/gerrit/gerrit\_site/etc/gerrit.config_
 
 * apache
 
+_yum -y install httpd_ 安装httpd
+
+_vim /etc/httpd/conf/httpd.conf_
+
+```markdown
+#Listen 12.34.56.78:80
+Listen 80 改为
+Listen 127.0.0.1:80  //指定apache所占用的IP及端口，避免与nginx端口冲突
+```
+
+_vim /usr/local/nginx/conf/nginx.conf_
+
+```markdown
+server {
+        #listen       80;               //注释掉，只监听指定ip下的80端口
+        listen       192.168.3.235:80;  //指定Nginx只占用某个IP的80端口
+        server_name  localhost;
+```
+
 _vim /etc/httpd/conf.d/gitweb.conf_
 
 ```markdown
