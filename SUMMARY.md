@@ -18,4 +18,5 @@
   * [Gerrit](ci/gerrit.md)
     * [Install](ci/gerrit/install.md)
     * [Config](ci/gerrit/config.md)
+    * [Issue](ci/gerrit/issue.md)
 
