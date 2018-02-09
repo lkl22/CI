@@ -32,7 +32,7 @@ flush privileges; //刷新权限，使权限修改生效
 
 在war包所在目录下，执行**java -jar gerrit\*.war init -d ~/gerrit\_site**，-d 后跟安装目录
 
-有一些判断性的问题会用**`[y/N]`**这样的形式，大写的字母表示默认，我们直接敲回车就表示采用默认的安装选项。
+有一些判断性的问题会用`[y/N]`这样的形式，大写的字母表示默认，我们直接敲回车就表示采用默认的安装选项。
 
 ```
 [gerrit@centos233 ~]$ java -jar gerrit*.war init -d ~/gerrit_site
@@ -168,7 +168,7 @@ _vim gerrit\_site/etc/gerrit.config_
 [gerrit]
         basePath = git
         serverId = 566ccad4-b987-4bc2-b407-1a78c64e3cc5
-        canonicalWebUrl = http://192.168.3.235:8081  //搭建gerrit所在主机的ip地址或者对应的域名
+        canonicalWebUrl = http://192.168.3.235:8081  //gerrit的主页地址，搭建gerrit所在主机的ip地址或者对应的域名
 [database]
         type = mysql
         hostname = localhost
@@ -180,7 +180,7 @@ _vim gerrit\_site/etc/gerrit.config_
         type = HTTP
 [receive]
         enableSignedPush = false
-[sendemail]
+[sendemail]   //可以不要，会使用系统默认的发送邮件
         smtpServer = smtp.163.com
         smtpServerPort = 25
         smtpUser = xxx@163.com
@@ -190,9 +190,9 @@ _vim gerrit\_site/etc/gerrit.config_
         user = gerrit
         javaHome = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.102-4.b14.el7.x86_64/jre
 [sshd]
-        listenAddress = *:29418
+        listenAddress = *:29418  //ssh监听的端口
 [httpd]
-        listenUrl = proxy-http://127.0.0.1:8081/
+        listenUrl = proxy-http://127.0.0.1:8081/   //反向代理监听的端口
 [cache]
         directory = cache
 ```
