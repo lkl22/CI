@@ -80,7 +80,7 @@ Enable signed push support     [y/N]? n
 *** Review Labels
 *** 
 
-Install Verified label         [y/N]? y
+Install Verified label         [y/N]? y  //要搭建CI系统，这里需要选择安装
 
 *** Email Delivery
 *** 
