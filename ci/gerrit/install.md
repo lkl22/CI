@@ -32,6 +32,8 @@ flush privileges; //刷新权限，使权限修改生效
 
 在war包所在目录下，执行**java -jar gerrit\*.war init -d ~/gerrit\_site**，-d 后跟安装目录
 
+有一些判断性的问题会用**`[y/N]`**这样的形式，大写的字母表示默认，我们直接敲回车就表示采用默认的安装选项。
+
 ```
 [gerrit@centos233 ~]$ java -jar gerrit*.war init -d ~/gerrit_site
 Using secure store: com.google.gerrit.server.securestore.DefaultSecureStore
@@ -145,6 +147,17 @@ Starting Gerrit Code Review: OK
 Waiting for server on gerrit.wenbin.com:80 ... OK
 Opening http://gerrit.wenbin.com/#/admin/projects/ ...OK
 [gerrit@centos233 ~]$
+```
+
+安装完成之后，gerrit会自动启动，而且会开始监听两个端口:
+
+1. 29418: 默认的ssh端口；
+2. 8080: gerrit默认的web页面端口。
+
+```
+[root@centos233 gerrit_site]# netstat -ltpn | grep -i gerrit
+tcp6       0      0 :::29418                :::*                    LISTEN      26903/GerritCodeRev 
+tcp6       0      0 127.0.0.1:8081          :::*                    LISTEN      26903/GerritCodeRev
 ```
 
 * 查看配置文件
