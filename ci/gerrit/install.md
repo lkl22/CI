@@ -117,7 +117,7 @@ Proxy uses SSL (https://)      [y/N]? n
 Subdirectory on proxy server   [/]: 
 Listen on address              [*]: 127.0.0.1
 Listen on port                 [8081]: 
-Canonical URL                  [http://*/]: http://gerrit.wenbin.com
+Canonical URL                  [http://*/]: http://192.168.3.235:8088
 
 *** Cache
 *** 
@@ -168,7 +168,7 @@ _vim gerrit\_site/etc/gerrit.config_
 [gerrit]
         basePath = git
         serverId = 566ccad4-b987-4bc2-b407-1a78c64e3cc5
-        canonicalWebUrl = http://192.168.3.235:8081  //gerrit的主页地址，搭建gerrit所在主机的ip地址或者对应的域名
+        canonicalWebUrl = http://192.168.3.235:8088  //gerrit的主页地址，搭建gerrit所在主机的ip地址及nginx代理端口或者对应的域名
 [database]
         type = mysql
         hostname = localhost
