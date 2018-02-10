@@ -1,6 +1,6 @@
 #### HTTP 500 内部服务器错误
 
-![](/assets/2018-02-09_111743.jpg)
+![](/assets/gerrit_nginx_500.png)
 
 _vim /usr/local/nginx/logs/error.log  _查看nginx的错误日志
 

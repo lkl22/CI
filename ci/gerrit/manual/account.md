@@ -13,5 +13,5 @@ Adding password for user newUser
 
 第一次使用登录的第一个用户为管理员
 
-![](/assets/login.png)
+![](/assets/gerrit_login.png)
 
