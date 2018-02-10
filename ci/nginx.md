@@ -1,2 +1,7 @@
-反向代理、负载均衡
+#### 目录：
+
+* [Install](/ci/nginx/install.md)
+* [Config](/ci/nginx/config.md)
+
+
 

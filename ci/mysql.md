@@ -1,8 +1,8 @@
-dql-select 
+#### 目录：
 
-dml-delete,insert,update 
+* [Install](/ci/mysql/install.md)
+* [Config](/ci/mysql/config.md)
+* [Manage](/ci/mysql/manage.md)
 
-ddl-create table create view 
 
-dcl-grant
 
