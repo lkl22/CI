@@ -15,3 +15,13 @@ Adding password for user newUser
 
 ![](/assets/gerrit_login.png)
 
+#### 注册邮箱
+
+![](/assets/gerrit_register_email.png)
+
+![](/assets/gerrit_email_verification.png)
+
+#### 创建Group
+
+
+
