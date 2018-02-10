@@ -21,5 +21,6 @@
   * [Service](ci/gerrit/service.md)
   * [Manual](ci/gerrit/manual.md)
     * [Account](ci/gerrit/manual/account.md)
+    * [Projects](ci/gerrit/manual/projects.md)
   * [Issue](ci/gerrit/issue.md)
 
