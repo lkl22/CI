@@ -8,6 +8,8 @@ yum install -y httpd-tools
 
 * 创建用户、密码
 
+**cd /home/gerrit/gerrit\_site/  **进入存放**认证文件**的目录
+
 **htpasswd -c htpasswd.conf admin**在当前目录创建 _**htpasswd.conf **_文件，并添加一个admin用户并设置密码
 
 ```
