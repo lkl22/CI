@@ -21,7 +21,29 @@ Adding password for user newUser
 
 ![](/assets/gerrit_email_verification.png)
 
-#### 创建Group
+#### Group管理
+
+* 创建用户组
+
+![](/assets/gerrit_group_create.png)
+
+* 管理用户组成员
+
+![](/assets/gerrit_group_members.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
