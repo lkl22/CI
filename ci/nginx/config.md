@@ -12,6 +12,8 @@ _vim /etc/init.d/nginx_ 添加以下网址中的脚本
 
 chmod a+x /etc/init.d/nginx
 
+chkconfig nginx on
+
 #### 防火墙配置
 
 nginx防火墙 80端口
