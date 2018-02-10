@@ -13,37 +13,21 @@ Adding password for user newUser
 
 第一次使用登录的第一个用户为管理员
 
-![](/assets/gerrit_login.png)
+![](/assets/gerrit/gerrit_login.png)
 
 #### 注册邮箱
 
-![](/assets/gerrit_register_email.png)
+![](/assets/gerrit/gerrit_register_email.png)
 
-![](/assets/gerrit_email_verification.png)
+![](/assets/gerrit/gerrit_email_verification.png)
 
 #### Group管理
 
 * 创建用户组
 
-![](/assets/gerrit_group_create.png)
+![](/assets/gerrit/gerrit_group_create.png)
 
 * 管理用户组成员
 
-![](/assets/gerrit_group_members.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![](/assets/gerrit/gerrit_group_members.png)
 
