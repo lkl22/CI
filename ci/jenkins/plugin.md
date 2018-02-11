@@ -6,3 +6,9 @@
 
 wiki：[https://wiki.jenkins.io/display/JENKINS/Gerrit+Trigger](https://wiki.jenkins.io/display/JENKINS/Gerrit+Trigger)
 
+#### role-strategy
+
+角色管理插件
+
+wiki：[https://plugins.jenkins.io/role-strategy](https://plugins.jenkins.io/role-strategy)
+
