@@ -23,4 +23,6 @@
     * [Account](ci/gerrit/manual/account.md)
     * [Projects](ci/gerrit/manual/projects.md)
   * [Issue](ci/gerrit/issue.md)
+* [Jenkins](ci/jenkins.md)
+  * [Install](ci/jenkins/install.md)
 
