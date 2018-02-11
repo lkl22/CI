@@ -3,7 +3,7 @@
 * 添加一条规则，生成iptables文件
 
 > iptables -P OUTPUT ACCEPT
-
+>
 > service iptables save
 
 * Backup
