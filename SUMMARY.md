@@ -25,4 +25,5 @@
   * [Issue](ci/gerrit/issue.md)
 * [Jenkins](ci/jenkins.md)
   * [Install](ci/jenkins/install.md)
+  * [Config](ci/jenkins/config.md)
 
