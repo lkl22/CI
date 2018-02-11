@@ -29,25 +29,19 @@ This package installation will:
 
 * 启动服务
 
-```
-systemctl start jenkins
-```
+> systemctl start jenkins
 
 * 重启服务
 
-```
-systemctl restart jenkins
-```
+> systemctl restart jenkins
 
 * 开机启动
 
-```
-chkconfig jenkins on
-```
+> chkconfig jenkins on
 
 * 查看状态
 
-_ps -aux \|grep jenkins_
+> _ps -aux \|grep jenkins_
 
 ```
 [root@centos233 ~]# ps -aux | grep jenkins

@@ -1,12 +1,10 @@
 #### Install
 
-```
-yum -y install gitweb
-```
+> yum -y install gitweb
 
 #### Config
 
-_vim /etc/gitweb.conf_
+> _vim /etc/gitweb.conf_
 
 ```markdown
 # Set the path to git projects.  This is an absolute filesystem path which will
@@ -17,7 +15,7 @@ $projectroot = "/home/gerrit/gerrit_site/git";  #插入一行，指定gerrit里g
 
 #### Gerrit配置
 
-_vim /home/gerrit/gerrit\_site/etc/gerrit.config_
+> _vim /home/gerrit/gerrit\_site/etc/gerrit.config_
 
 在配置文件末尾加上下面的配置
 
@@ -31,9 +29,9 @@ _vim /home/gerrit/gerrit\_site/etc/gerrit.config_
 
 * apache
 
-_yum -y install httpd_ 安装httpd
+> _yum -y install httpd_ 安装httpd
 
-_vim /etc/httpd/conf/httpd.conf_
+> _vim /etc/httpd/conf/httpd.conf_
 
 ```markdown
 #Listen 12.34.56.78:80
@@ -41,7 +39,7 @@ Listen 80 改为
 Listen 127.0.0.1:80  //指定apache所占用的IP及端口，避免与nginx端口冲突
 ```
 
-_vim /usr/local/nginx/conf/nginx.conf_
+> _vim /usr/local/nginx/conf/nginx.conf_
 
 ```markdown
 server {
@@ -50,7 +48,7 @@ server {
         server_name  localhost;
 ```
 
-_vim /etc/httpd/conf.d/gitweb.conf_
+> _vim /etc/httpd/conf.d/gitweb.conf_
 
 ```markdown
 #
@@ -68,9 +66,7 @@ Alias /gitweb "/var/www/git"
 
 开机自动启动apache代理
 
-```
-systemctl enable httpd
-```
+> systemctl enable httpd
 
 
 

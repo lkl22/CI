@@ -2,9 +2,7 @@
 
 * 安装工具包
 
-```
-yum install -y httpd-tools
-```
+> yum install -y httpd-tools
 
 * 创建用户、密码
 
@@ -21,7 +19,7 @@ Adding password for user admin
 
 * 新增用户、修改用户密码
 
-htpasswd -m htpasswd.conf admin
+> htpasswd -m htpasswd.conf admin
 
 ```
 [gerrit@centos233 gerrit_site]$ htpasswd -m htpasswd.conf userName
@@ -32,7 +30,7 @@ Adding password for user userName
 
 #### Nginx代理设置
 
-_vim /usr/local/nginx/conf/vhost/gerrit.conf_
+> _vim /usr/local/nginx/conf/vhost/gerrit.conf_
 
 ```markdown
 server {
@@ -65,11 +63,13 @@ server {
 }
 ```
 
-重启nginx服务  _/usr/local/nginx/sbin/nginx -s reload_
+重启nginx服务  
+
+> _/usr/local/nginx/sbin/nginx -s reload_
 
 #### 防火墙配置
 
-_vim /etc/firewalld/zones/public.xml_
+> _vim /etc/firewalld/zones/public.xml_
 
 ```css
 <?xml version="1.0" encoding="utf-8"?>

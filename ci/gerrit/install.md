@@ -9,7 +9,7 @@ yum install -y gerrit
 
 * Download
 
-wget [https://gerrit-releases.storage.googleapis.com/gerrit-2.14.3.war](https://gerrit-releases.storage.googleapis.com/gerrit-2.15-rc2.war)
+> wget [https://gerrit-releases.storage.googleapis.com/gerrit-2.14.3.war](https://gerrit-releases.storage.googleapis.com/gerrit-2.15-rc2.war)
 
 * 添加user
 
@@ -162,7 +162,7 @@ tcp6       0      0 127.0.0.1:8081          :::*                    LISTEN      
 
 * 查看配置文件
 
-_vim gerrit\_site/etc/gerrit.config_
+> _vim gerrit\_site/etc/gerrit.config_
 
 ```
 [gerrit]

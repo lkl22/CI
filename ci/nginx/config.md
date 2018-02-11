@@ -11,7 +11,7 @@
 修改权限
 
 > chmod a+x /etc/init.d/nginx
-
+>
 > chkconfig nginx on
 
 #### 防火墙配置

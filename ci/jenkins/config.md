@@ -1,6 +1,6 @@
 #### 修改端口
 
-_vim /etc/sysconfig/jenkins_
+> _vim /etc/sysconfig/jenkins_
 
 ```markdown
 ## Type:        integer(0:65535)
