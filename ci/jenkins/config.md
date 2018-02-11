@@ -44,11 +44,17 @@ JENKINS_PORT="8089"  //将默认8080端口改为8089
 
 ![](/assets/jenkins/jenkins_create_admin.png)
 
-vim /etc/passwd将false改为bash，否则无法切换到jenkins账户，ssh-keygen就无法生成密钥了
+#### 生成id\_rsa.pub
+
+> vim /etc/passwd将false改为bash，否则无法切换到jenkins账户，ssh-keygen就无法生成密钥了
 
 ```markdown
 jenkins:x:996:994:Jenkins Continuous Integration Server:/var/lib/jenkins:/bin/false -> bash
 ```
+
+> ssh-keygen -t rsa -C "xxx@163.com"
+
+> cat ~/.ssh/id\_rsa.pub  //添加到gerrit中jenkins用户的ssh public key列表
 
 
 

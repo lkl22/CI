@@ -27,4 +27,5 @@
 * [Jenkins](ci/jenkins.md)
   * [Install](ci/jenkins/install.md)
   * [Config](ci/jenkins/config.md)
+  * [Plugin](ci/jenkins/plugin.md)
 
