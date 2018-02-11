@@ -36,6 +36,10 @@ JENKINS_PORT="8089"  //将默认8080端口改为8089
 >
 > success
 
+#### 首次登录
+
+![](/assets/jenkins/jenkins_login.png)
+
 vim /etc/passwd将false改为bash，否则无法切换到jenkins账户，ssh-keygen就无法生成密钥了
 
 ```markdown
