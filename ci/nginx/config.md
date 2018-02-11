@@ -1,6 +1,6 @@
 #### 开机自动启动
 
-_vim /etc/init.d/nginx_ 添加以下网址中的脚本
+> _vim /etc/init.d/nginx_ 添加以下网址中的脚本
 
 [https://www.nginx.com/resources/wiki/start/topics/examples/redhatnginxinit/](https://www.nginx.com/resources/wiki/start/topics/examples/redhatnginxinit/)
 
@@ -10,17 +10,15 @@ _vim /etc/init.d/nginx_ 添加以下网址中的脚本
 
 修改权限
 
-chmod a+x /etc/init.d/nginx
+> chmod a+x /etc/init.d/nginx
 
-chkconfig nginx on
+> chkconfig nginx on
 
 #### 防火墙配置
 
 nginx防火墙 80端口
 
-```
--A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
-```
+> -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
 
 #### 配置nginx
 
@@ -34,17 +32,13 @@ vim nginx.conf
 
 ### 重启
 
-```
-/usr/local/nginx/sbin/nginx -s reload
-```
+> /usr/local/nginx/sbin/nginx -s reload
 
 nginx: \[error\] open\(\) "/usr/local/nginx/logs/nginx.pid" failed \(2: No such file or directory\)
 
 _使用nginx -c的参数指定nginx.conf文件的位置_
 
-```
-/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
-```
+> /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
 
 
 
