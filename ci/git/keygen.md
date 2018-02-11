@@ -25,8 +25,6 @@ The key fingerprint is:
 
 它先要求你确认保存公钥的位置（\`**.ssh/id\_rsa**\`），然后它会让你重复一个密码两次，如果不想在使用公钥的时候输入密码，可以留空。
 
-
-
 显示公钥内容，复制给Git服务器的管理员
 
 ```
@@ -41,7 +39,7 @@ NrRFi9wrf+M7Q==邮箱地址
 
 使用**ssh-add**命令可以把私钥添加到**ssh-agent**，当登录远程主机中的程序\(如:git push\)请求对应的私钥时，可以由ssh-agent把本地私钥发送给远程主机\(启动这个功能要在ssh配置中设置\`ForwardAgent yes\`\)
 
-_ssh-add ~/.ssh/id\_rsa_
+> _ssh-add ~/.ssh/id\_rsa_
 
     _Could not open a connection to your authentication agent._
 

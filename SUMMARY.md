@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [LinuxOS](ci/linuxos.md)
+* [Firewall](ci/firewall.md)
 * [Git](ci/git.md)
   * [Install](ci/git/install.md)
   * [Keygen](ci/git/keygen.md)
