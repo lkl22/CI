@@ -2,6 +2,8 @@
 
 * [Introduction](README.md)
 * [LinuxOS](ci/linuxos.md)
+  * [System](ci/linuxos/system.md)
+  * [JDK](ci/linuxos/jdk.md)
 * [Firewall](ci/firewall.md)
 * [Git](ci/git.md)
   * [Install](ci/git/install.md)
