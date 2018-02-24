@@ -5,6 +5,7 @@
   * [System](ci/linuxos/system.md)
   * [JDK](ci/linuxos/jdk.md)
   * [Maven](ci/linuxos/maven.md)
+  * [Tomcat](ci/linuxos/tomcat.md)
 * [Firewall](ci/firewall.md)
 * [Git](ci/git.md)
   * [Install](ci/git/install.md)
