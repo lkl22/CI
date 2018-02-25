@@ -2,9 +2,8 @@
 
 * [Install](/ci/jenkins/install.md)
 * [Config](/ci/jenkins/config.md)
+* [Manage Account](/ci/jenkins/account-management.md)
 * [Plugin](/ci/jenkins/plugin.md)
-
-
 
 官网：[https://jenkins.io/](https://jenkins.io/)
 

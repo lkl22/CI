@@ -31,7 +31,7 @@
 * [Jenkins](ci/jenkins.md)
   * [Install](ci/jenkins/install.md)
   * [Config](ci/jenkins/config.md)
-  * [Account management](ci/jenkins/account-management.md)
+  * [Manage Account](ci/jenkins/account-management.md)
   * [Plugin](ci/jenkins/plugin.md)
 * [Android](ci/android.md)
 
