@@ -10,5 +10,7 @@ wiki：[https://wiki.jenkins.io/display/JENKINS/Gerrit+Trigger](https://wiki.jen
 
 角色管理插件
 
-wiki：[https://plugins.jenkins.io/role-strategy](https://plugins.jenkins.io/role-strategy)
+官网：[https://plugins.jenkins.io/role-strategy](https://plugins.jenkins.io/role-strategy)
+
+wiki：[https://wiki.jenkins.io/display/JENKINS/Role+Strategy+Plugin\#RoleStrategyPlugin-Version2.7.0\(Feb06,2018\)](https://wiki.jenkins.io/display/JENKINS/Role+Strategy+Plugin#RoleStrategyPlugin-Version2.7.0%28Feb06,2018%29)
 
