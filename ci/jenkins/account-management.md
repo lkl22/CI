@@ -12,11 +12,13 @@
 
 **Manage Jenkins -&gt; Manage and Assign Roles **
 
-* Manage Roles
+* **Manage Roles**
 
-![](/assets/jenkins/jenkins_manage&Assign_roles.jpg)
+创建group，并为group分配不同的访问权限![](/assets/jenkins/jenkins_manage&Assign_roles.jpg)
 
-* Assign Roles
+* **Assign Roles**
 
+为用户分配不同的group
 
+![](/assets/jenkins/jenkins_assign_roles.png)
 
