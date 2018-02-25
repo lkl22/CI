@@ -1,3 +1,5 @@
+#### Install
+
 官网：[https://jenkins.io/doc/book/installing/](https://jenkins.io/doc/book/installing/)
 
 安装包：[https://pkg.jenkins.io/](https://pkg.jenkins.io/)
@@ -27,19 +29,28 @@ This package installation will:
 
 * Set Jenkins to listen on port 8080. Access this port with your browser to start configuration.
 
-* 启动服务
+#### Update
+
+下载最新的jar包替换到旧的jar后，重启即可
+
+```
+[root@centos233 jenkins]# ls /usr/lib/jenkins/
+jenkins.war
+```
+
+##### 启动服务
 
 > systemctl start jenkins
 
-* 重启服务
+##### 重启服务
 
 > systemctl restart jenkins
 
-* 开机启动
+##### 开机启动
 
 > chkconfig jenkins on
 
-* 查看状态
+##### 查看状态
 
 > _ps -aux \|grep jenkins_
 
