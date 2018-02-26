@@ -18,5 +18,9 @@ Jenkins的通知邮件了。
 
 ### 二、Email Extension Plugin插件配置邮件通知
 
+1、全局配置
 
+**Jenkins -&gt; Manage Jenkins -&gt; Configure System**![](/assets/jenkins/jenkins_global_ext_email_notification.png)
+
+2、项目配置
 
