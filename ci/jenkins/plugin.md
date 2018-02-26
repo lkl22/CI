@@ -14,3 +14,9 @@ wiki：[https://wiki.jenkins.io/display/JENKINS/Gerrit+Trigger](https://wiki.jen
 
 wiki：[https://wiki.jenkins.io/display/JENKINS/Role+Strategy+Plugin\#RoleStrategyPlugin-Version2.7.0\(Feb06,2018\)](https://wiki.jenkins.io/display/JENKINS/Role+Strategy+Plugin#RoleStrategyPlugin-Version2.7.0%28Feb06,2018%29)
 
+#### Email-ext plugin
+
+邮件扩展插件
+
+wiki：[https://wiki.jenkins.io/display/JENKINS/Email-ext+plugin](https://wiki.jenkins.io/display/JENKINS/Email-ext+plugin)
+
