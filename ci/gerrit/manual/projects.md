@@ -6,6 +6,18 @@
 
 ![](/assets/gerrit/gerrit_projects_general.png)
 
+### Access
+
+配置All-Projects
+
+![](/assets/gerrit/gerrit_projects_access.png)
+
+![](/assets/gerrit/gerrit_projects_access1.png)
+
+配置工程项目
+
+![](/assets/gerrit/gerrit_projects_access2.png)
+
 ### Branches
 
 创建代码分支
@@ -15,6 +27,4 @@
 ### Tags
 
 ![](/assets/gerrit/gerrit_projects_tags.png)
-
-
 
