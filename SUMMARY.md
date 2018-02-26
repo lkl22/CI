@@ -37,4 +37,5 @@
   * [Archive Artifacts](ci/jenkins/archive-artifacts.md)
   * [Plugin](ci/jenkins/plugin.md)
 * [Android](ci/android.md)
+  * [SDK](ci/android/sdk.md)
 
