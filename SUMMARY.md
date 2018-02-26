@@ -34,6 +34,7 @@
   * [Credentials](ci/jenkins/credentials.md)
   * [Manage Account](ci/jenkins/account-management.md)
   * [Manage Email](ci/jenkins/manage-email.md)
+  * [Archive Artifacts](ci/jenkins/archive-artifacts.md)
   * [Plugin](ci/jenkins/plugin.md)
 * [Android](ci/android.md)
 
