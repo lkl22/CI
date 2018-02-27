@@ -5,9 +5,7 @@
 * [Credentials](/ci/jenkins/credentials.md)
 * [Manage Account](/ci/jenkins/account-management.md)
 * [Job](/ci/jenkins/job.md)
-* [Plugin](#)
-
-
+* [Plugin](/ci/jenkins/plugin.md)
 
 官网：[https://jenkins.io/](https://jenkins.io/)
 
