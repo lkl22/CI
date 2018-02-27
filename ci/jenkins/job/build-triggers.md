@@ -16,3 +16,9 @@
 
 ![](/assets/jenkins/jenkins_gerrit_connection_setting.png)
 
+**Gerrit Reporting Values**
+
+![](/assets/jenkins/jenkins_gerrit_reporting_values.png)
+
+**job里的配置**![](/assets/jenkins/jenkins_gerrit_trigger_config.png)
+
