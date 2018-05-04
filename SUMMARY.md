@@ -44,4 +44,5 @@
   * [Plugin](ci/jenkins/plugin.md)
 * [Android](ci/android.md)
   * [SDK](ci/android/sdk.md)
+  * [Adb](ci/android/adb.md)
 
