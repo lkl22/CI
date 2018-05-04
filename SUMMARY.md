@@ -42,7 +42,4 @@
     * [Manage Email](ci/jenkins/job/manage-email.md)
     * [Archive Artifacts](ci/jenkins/job/archive-artifacts.md)
   * [Plugin](ci/jenkins/plugin.md)
-* [Android](ci/android.md)
-  * [SDK](ci/android/sdk.md)
-  * [Adb](ci/android/adb.md)
 
