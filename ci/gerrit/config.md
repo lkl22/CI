@@ -41,15 +41,15 @@ send "[lrange $argv 1 1]\r"
 interact
 ```
 
-* 验证用户密码
+* 验证用户密码并修改密码
 
 ```markdown
 #!/bin/bash
-if [ $# -lt 2 ]
+if [ $# -lt 3 ]
 then
-    echo "Error: param error!! 
-请输入：指令 username password"
-    exit
+    echo "Error: param error!!
+请输入：指令 username oldPwd newPwd"
+exit
 fi
 salt=$(cat ./htpasswd.conf | grep ^$1: | cut -d$ -f3)
 #echo "salt: $salt"
@@ -60,10 +60,10 @@ grep -q $1:$password ./htpasswd.conf
 if [ $? -eq 0 ]
 then
     echo "password is valid"
+    expect ./modify.exp $1 $3
 else
     echo "password is invalid"
 fi
-
 ```
 
 #### Nginx代理设置
