@@ -7,6 +7,7 @@
   * [Maven](ci/linuxos/maven.md)
   * [Tomcat](ci/linuxos/tomcat.md)
   * [Firewall](ci/linuxos/firewall.md)
+  * [Expect](ci/linuxos/expect.md)
 * [Git](ci/git.md)
   * [Install](ci/git/install.md)
   * [Keygen](ci/git/keygen.md)

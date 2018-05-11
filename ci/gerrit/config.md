@@ -28,6 +28,44 @@ Re-type new password:
 Adding password for user userName
 ```
 
+脚本修改密码
+
+```markdown
+#!/usr/bin/expect
+set timeout 30
+spawn htpasswd -m ./htpasswd.conf [lindex $argv 0]
+expect "New password:"
+send "[lrange $argv 1 1]\r"
+expect "Re-type new password:"
+send "[lrange $argv 1 1]\r"
+interact
+```
+
+* 验证用户密码
+
+```markdown
+#!/bin/bash
+if [ $# -lt 2 ]
+then
+    echo "Error: param error!! 
+请输入：指令 username password"
+    exit
+fi
+salt=$(cat ./htpasswd.conf | grep ^$1: | cut -d$ -f3)
+#echo "salt: $salt"
+password=$(openssl passwd -apr1 -salt $salt $2)
+
+grep -q $1:$password ./htpasswd.conf
+
+if [ $? -eq 0 ]
+then
+    echo "password is valid"
+else
+    echo "password is invalid"
+fi
+
+```
+
 #### Nginx代理设置
 
 > _vim /usr/local/nginx/conf/vhost/gerrit.conf_
@@ -63,7 +101,7 @@ server {
 }
 ```
 
-重启nginx服务  
+重启nginx服务
 
 > _/usr/local/nginx/sbin/nginx -s reload_
 
