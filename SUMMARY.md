@@ -23,6 +23,7 @@
 * [Gerrit](ci/gerrit.md)
   * [Install](ci/gerrit/install.md)
   * [Config](ci/gerrit/config.md)
+  * [SSH](ci/gerrit/ssh.md)
   * [Gitweb](ci/gerrit/gitweb.md)
   * [Service](ci/gerrit/service.md)
   * [Manual](ci/gerrit/manual.md)
